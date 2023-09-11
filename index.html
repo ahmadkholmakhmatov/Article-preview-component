@@ -18,6 +18,114 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <main class="card">
+      <picture class="card__picture">
+        <source
+          srcset="images/drawers-mobile.jpg 1x, images/drawers-mobile@2x.jpg 2x"
+          media="(max-width:900px)"
+        />
+        <img
+          src="images/drawers-desktop.jpg"
+          alt="green furniture with decorations on it"
+          width="285"
+          height="280"
+          class="card__img"
+          srcset="
+            images/drawers-desktop.jpg    1x,
+            images/drawers-desktop@2x.jpg 2x
+          "
+        />
+      </picture>
+      <div class="card__body">
+        <h2 class="card-heading"></h2>
+        <p class="card___text"></p>
+        <div class="card__meta">
+          <img
+            class="card__author-img"
+            src="images/avatar-michelle.jpg"
+            alt="Author image"
+            width="40"
+            height="40"
+            srcset="
+              images/avatar-michelle.jpg    1x,
+              images/avatar-michelle@2x.jpg 2x
+            "
+          />
+          <div class="card__wrapper-author-date">
+            <p class="card__author-name"></p>
+            <time class="card_date" datetime="28-06-2020">28 Jun 2020</time>
+          </div>
+
+          <div class="card__share-wrapper">
+            <button class="share-widget__toggler" type="button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="13"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  fill="currentColor"
+                  d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+                />
+              </svg>
+            </button>
+            <div class="share-widget__inner">
+              <p class="share-widget__label"></p>
+              <ul class="share-widget__socials" role="list">
+                <li class="share-widget__socials-item" role="listitem">
+                  <a
+                    class="share-widget__socials-link"
+                    href="#"
+                    aria-label="Facebook"
+                  >
+                    <img
+                      src="images/icon-facebook.svg"
+                      class="share-widget__socials-icon"
+                      width="20"
+                      height="20"
+                      aria-hidden="true"
+                    />
+                  </a>
+                </li>
+                <li class="share-widget__socials-item" role="listitem">
+                  <a
+                    class="share-widget__socials-link"
+                    href="#"
+                    aria-label="Twitter"
+                  >
+                    <img
+                      src="images/icon-twitter.svg"
+                      class="share-widget__socials-icon"
+                      width="20"
+                      height="20"
+                      aria-hidden="true"
+                    />
+                  </a>
+                </li>
+                <li class="share-widget__socials-item" role="listitem">
+                  <a
+                    class="share-widget__socials-link"
+                    href="#"
+                    aria-label="Pinterest"
+                  >
+                    <img
+                      src="images/icon-pinterest.svg"
+                      class="share-widget__socials-icon"
+                      width="20"
+                      height="20"
+                      aria-hidden="true"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <script src="js/main.js"></script>
   </body>
 </html>
